@@ -1,2 +1,2 @@
-# form-multi-etapa
+# form-multietapa
 React and TypeScript
