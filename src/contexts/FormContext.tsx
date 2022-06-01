@@ -65,7 +65,6 @@ const formReducer = (state: State, action: Action) => {
 export const FormProvider = ({children}: FormProviderProps) => {
     const [state, dispatch] = useReducer(formReducer, initialData);
 
-
     return(
         <FormContext.Provider value={ {state, dispatch} }>
             {children}
@@ -79,7 +78,7 @@ export const useForm = () => {
     const context = useContext(FormContext);
 
     if(context === undefined) {
-        throw new Error('useForm deve ser utilizado dentro do formProvider')
+        throw new Error('useForm deve ser utilizado dentro do formProvider');
     }
 
     return context;
