@@ -32,6 +32,9 @@ export const SideBarItem = ({title, description, icon, path, active}: Props) => 
                     {icon === 'mail' &&
                         <MailIcon fill="white" width={24} height={24}/>
                     }
+                    {icon === 'summary' &&
+                        <BookIcon fill="white" width={24} height={24}/>
+                    }
                 </C.IconArea>
                 <C.Point active={active}></C.Point>
             </Link>

@@ -10,8 +10,6 @@ type Props = {
 
 export const Theme = ({children}: Props) => {
     const { state, dispatch } = useForm();
-    
-    
 
     return(
         <C.Container>
@@ -40,6 +38,13 @@ export const Theme = ({children}: Props) => {
                             icon="mail"
                             path="/step3"
                             active = {state.currentStep === 3}
+                        />
+                        <SideBarItem
+                            title="Resumo"
+                            description="Revisar dados"
+                            icon="summary"
+                            path="/step4"
+                            active = {state.currentStep === 4}
                         />
                     </C.Sidebar>
                     <C.Page>

@@ -20,7 +20,7 @@ export const FormStep3 = () => {
 
     const handleNextStep = () => {
         if(state.email !== '' && state.github !== ''){
-            console.log(state);
+            navigate("/step4");
         } else {
             alert("Preencha os dados");
         }
@@ -70,7 +70,7 @@ export const FormStep3 = () => {
 
                 <Link className='backButton' to='/step2'>Voltar</Link>
                 
-                <button onClick={handleNextStep}>Finalizar Cadastro</button>
+                <button onClick={handleNextStep}>Próximo</button>
             </C.Container>
         </Theme>
     );
